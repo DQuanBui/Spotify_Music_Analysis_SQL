@@ -3,14 +3,26 @@
 ![](https://github.com/DQuanBui/Spotify_Music_Analysis_SQL/blob/main/logo.jpg)
 
 ## Project Overview
+This project provides a detailed analysis of Spotify's music data, covering its objectives, key findings, and insights into track performance, artist influence, and streaming trends. Using advanced query techniques, the project explores patterns in listener engagement, music attributes, and platform-specific streaming metrics. By leveraging data-driven insights, this analysis helps uncover factors influencing track popularity, artist success, and user behavior, contributing to a deeper understanding of music consumption trends.
 
-
+The data for this project is sourced from the Kaggle dataset:
 - **Dataset Link:** [Spotify_Music_Dataset](https://www.kaggle.com/datasets/sanjanchaudhari/spotify-dataset)
-- **SQL Scripts:** [Spotify_Music_SQL_Scripts](https://github.com/DQuanBui/Spotify_Music_Analysis_SQL/blob/main/Spotify_Music_Analysis.sql)
+
+The dataset contains attributes such as:
+- `Artist`: The performer of the track.
+- `Track`: The name of the song.
+- `Album`: The album to which the track belongs.
+- `Album_type`: The type of album (e.g., single or album).
+- Other metrics such as `danceability`, `energy`, `loudness`, `tempo`, and more.
 
 ## Tools 
 - Language: SQL
 - Tools: PostgreSQL
+
+## Objectives
+- Analyze Spotify track, artist, and album data to uncover trends in streaming, popularity, and engagement.
+- Use advanced query techniques to identify patterns in music attributes, listener preferences, and platform performance.
+- Optimize data retrieval to explore relationships between track features, user interactions, and streaming success.
 
 ## Schema
 ### Create the Spotify table and Importing the Data
@@ -87,10 +99,7 @@ DELETE FROM spotify
 WHERE duration_min = 0;
 ```
 
-## Objectives
-
-
-## Dataset Problems/Questions
+## Problems/Questions
 
 1. Retrieve the names of all tracks that have more than 1 billion streams.
 2. List all albums along with their respective artists.
@@ -111,8 +120,8 @@ WHERE duration_min = 0;
 17. Retrieve the most-streamed tracks for each platform (Spotify and YouTube)
 18. Get the total streams of the previous and next track for each track within an artist
 
-## Conclusion
-
+## Solutions
+**SQL Solutions:** [Spotify_Music_SQL_Scripts](https://github.com/DQuanBui/Spotify_Music_Analysis_SQL/blob/main/Spotify_Music_Analysis.sql)
 
 ## Contact
 For any inquiries or questions regarding the project, please contact me at dbui10@fordham.edu
